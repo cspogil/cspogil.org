@@ -1,4 +1,6 @@
 favicon.ico is "Light Bulb free icon" by Freepik:
 https://www.flaticon.com/free-icon/light-bulb_2779262
 Free for personal and commercial purpose with attribution.
-$ convert light-bulb.png -define icon:auto-resize=64,48,32,16 favicon.ico
+``` sh
+convert light-bulb.png -define icon:auto-resize=64,48,32,16 favicon.ico
+```

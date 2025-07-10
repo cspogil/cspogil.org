@@ -54,7 +54,7 @@ plugins:
 theme:
   name: material
   custom_dir: overrides
-  favicon: images/favicon.ico
+  favicon: favicon.ico
   palette:
     # Palette toggle for light mode
     - scheme: default
