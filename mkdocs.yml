@@ -2,6 +2,10 @@ site_name: CS-POGIL
 site_url: https://cspogil.github.io/
 repo_url: https://github.com/cspogil/cspogil.github.io
 
+extra:
+  analytics:
+    provider: goatcounter
+
 markdown_extensions:
 
   # https://python-markdown.github.io/extensions/
@@ -49,6 +53,7 @@ plugins:
 
 theme:
   name: material
+  custom_dir: overrides
   favicon: images/favicon.ico
   palette:
     # Palette toggle for light mode
