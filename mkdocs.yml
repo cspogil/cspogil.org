@@ -1,0 +1,9 @@
+site_name: CS-POGIL
+site_url: http://cspogil.github.io/
+
+plugins:
+    - search
+    - awesome-nav
+
+theme:
+  name: material

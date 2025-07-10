@@ -1,0 +1,10 @@
+# macOS
+._*
+.DS_Store
+
+# Python
+__pycache__/
+
+# Website
+.venv/
+site/
