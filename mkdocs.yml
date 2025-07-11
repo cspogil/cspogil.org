@@ -44,12 +44,21 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+hooks:
+  - hooks/bibgen.py
+
 plugins:
   - search
 
 extra:
   analytics:
     provider: goatcounter
+  consent:
+    title: Under Construction
+    description: >-
+      This site is currently being developed, so you may find incomplete pages, broken links, typos, etc.
+    cookies:
+      analytics: GoatCounter
 
 extra_css:
   - tweaks.css?v=2025-07-10

@@ -10,9 +10,9 @@ Deployment to [GitHub Pages][3] is automated via [GitHub Actions][4].
 
 ## Using MkDocs
 
-To install the current version we're using:
+To install the required Python packages:
 ``` sh
-$ pip install mkdocs-material==9.6.*
+$ pip install --pre -r requirements.txt
 ```
 
 To preview the site locally while editing:
