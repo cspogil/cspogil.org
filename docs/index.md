@@ -12,7 +12,9 @@ hide:
 </style>
 
 <div>
-  <img src="cspogil-logo.jpg" alt="light bulb surrounded by POGIL in CS"
+  <img src="cspogil-logo-light.png#only-light" alt="light bulb surrounded by POGIL in CS"
+       style="float: right; max-width: min(14em, 45%); margin: 0 1em;">
+  <img src="cspogil-logo-dark.png#only-dark" alt="light bulb surrounded by POGIL in CS"
        style="float: right; max-width: min(14em, 45%); margin: 0 1em;">
 </div>
 
