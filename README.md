@@ -25,3 +25,10 @@ $ mkdocs serve
 * [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 * [Reference - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/)
 * [Reference - Awesome Nav for MkDocs](https://lukasgeiter.github.io/mkdocs-awesome-nav/reference/)
+
+## Acknowledgments
+
+* light-bulb.png is [Light Bulb free icon](https://www.flaticon.com/free-icon/light-bulb_2779262) by Freepik.
+  Free for personal and commercial purpose with attribution.
+* favicon.ico was created with:
+  `convert light-bulb.png -define icon:auto-resize=64,48,32,16 favicon.ico`

@@ -2,10 +2,6 @@ site_name: CS-POGIL
 site_url: https://cspogil.github.io/
 repo_url: https://github.com/cspogil/cspogil.github.io
 
-extra:
-  analytics:
-    provider: goatcounter
-
 markdown_extensions:
 
   # https://python-markdown.github.io/extensions/
@@ -51,10 +47,18 @@ markdown_extensions:
 plugins:
   - search
 
+extra:
+  analytics:
+    provider: goatcounter
+
+extra_css:
+  - tweaks.css?v=2025-07-10
+
 theme:
   name: material
   custom_dir: overrides
   favicon: favicon.ico
+  logo: light-bulb.png
   palette:
     # Palette toggle for light mode
     - scheme: default

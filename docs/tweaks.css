@@ -1,0 +1,46 @@
+/* classic admonitions */
+
+.md-typeset .admonition,
+.md-typeset details {
+    border-width: 0;
+    border-left-width: 4px;
+    font-size: unset;
+}
+
+/* table fonts and colors */
+
+.md-typeset table:not([class]) {
+    font-size: unset;
+    line-height: initial;
+}
+
+.md-typeset table:not([class]) th {
+    background-color: var(--md-code-bg-color);
+}
+
+/* print settings */
+
+.md-typeset h2,
+.md-typeset h3 {
+    page-break-after: avoid;
+}
+
+@page {
+    margin: 0.5in;
+}
+
+@media print {
+    .md-main__inner {
+        margin-top: 0;
+    }
+
+    .screenonly {
+        display: none !important;
+    }
+}
+
+@media screen {
+    .printonly {
+        display: none !important;
+    }
+}
