@@ -58,7 +58,7 @@ theme:
   name: material
   custom_dir: overrides
   favicon: favicon.ico
-  logo: light-bulb.png
+  logo: img/light-bulb.png
   palette:
     # Palette toggle for light mode
     - scheme: default

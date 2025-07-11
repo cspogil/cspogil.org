@@ -12,15 +12,15 @@ hide:
 </style>
 
 <div>
-  <img src="cspogil-logo-light.png#only-light" alt="light bulb surrounded by POGIL in CS"
+  <img src="img/cspogil-logo-light.png#only-light" alt="light bulb surrounded by POGIL in CS"
        style="float: right; max-width: min(14em, 45%); margin: 0 1em;">
-  <img src="cspogil-logo-dark.png#only-dark" alt="light bulb surrounded by POGIL in CS"
+  <img src="img/cspogil-logo-dark.png#only-dark" alt="light bulb surrounded by POGIL in CS"
        style="float: right; max-width: min(14em, 45%); margin: 0 1em;">
 </div>
 
 # Welcome to cspogil.org!
 
-This site contains activities and other resources to support using [Process Oriented Guided Inquiry Learning](https://pogil.org/) (POGIL) in Computer Science (CS) and related disciplines.
+This site contains classroom activities and other resources to support using [Process Oriented Guided Inquiry Learning](https://pogil.org/) (POGIL) in Computer Science (CS) and related disciplines like Software Engineering and Information Technology.
 
 ## :blue_book: CS Activities
 
@@ -33,9 +33,9 @@ Visit the [Activities](activities.md) page to search by course, topic, or author
     To learn more about the program, see [the editorial](https://drive.google.com/file/d/19SAVvWJ74YtDuFFaBTBKlAbFV8ymWY00/view) and the [ASEE paper](https://peer.asee.org/the-cs-pogil-activity-writing-program).
 
     The collection includes activities for
-    CS 0,
-    CS 1,
-    CS 2,
+    CS0,
+    CS1,
+    CS2,
     Computer Architecture,
     Cryptography,
     Databases,
@@ -50,13 +50,13 @@ Visit the [Activities](activities.md) page to search by course, topic, or author
 
 Join our [POGIL in CS Google Group](https://groups.google.com/forum/#!forum/cspogil/join)
 :   This low-traffic email list is the best way to connect with other CS-POGIL practitioners.
-We use this group to announce events, brainstorm ideas, and answer questions.
+We use this group to announce events, share ideas, and answer questions.
 
 Join our [POGIL in CS Facebook Group](https://www.facebook.com/groups/900700016708730/)
 :   Prefer Facebook? This private group is an informal way to connect with CS-POGIL practitioners who are active on social media.
 
 [Contribute to the CS-POGIL Website](TODO)
-:   Help spread the word about the people and projects in our community! Create a profile page, share activities you've written, and let others know about your work.
+:   Help spread the word about the people and projects in our community! Share activities you've written, create a profile page, and let others know about your work.
 
 ## Other Pages
 
@@ -90,7 +90,7 @@ Join our [POGIL in CS Facebook Group](https://www.facebook.com/groups/9007000167
     **Expand your teaching toolbox**
 
     ---
-    Find resources for facilitation, activity authoring, classroom observation, and more.
+    Find resources for facilitation, activity writing, classroom observation, and more.
 
     [:material-arrow-right: Tools](tools.md)
 
