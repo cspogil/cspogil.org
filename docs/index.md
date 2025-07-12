@@ -84,7 +84,7 @@ Join our [POGIL in CS Facebook Group](https://www.facebook.com/groups/9007000167
     ---
     Browse our bibliography of publications and funded projects related to CS-POGIL.
 
-    [:material-arrow-right: Research](research.md)
+    [:material-arrow-right: Research](research/index.md)
 
 -   :tools:{ .lg .middle }
     **Expand your teaching toolbox**

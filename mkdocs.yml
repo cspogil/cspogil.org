@@ -2,6 +2,16 @@ site_name: CS-POGIL
 site_url: https://cspogil.github.io/
 repo_url: https://github.com/cspogil/cspogil.github.io
 
+extra:
+  consent:
+    title: Under Construction
+    description: >-
+      This site is currently being developed, so you may
+      find incomplete pages, broken links, typos, etc.
+
+extra_css:
+  - tweaks.css?v=2025-07-10
+
 markdown_extensions:
 
   # https://python-markdown.github.io/extensions/
@@ -44,20 +54,9 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-hooks:
-  - hooks/bibgen.py
-
 plugins:
   - search
-
-extra:
-  consent:
-    title: Under Construction
-    description: >-
-      This site is currently being developed, so you may find incomplete pages, broken links, typos, etc.
-
-extra_css:
-  - tweaks.css?v=2025-07-10
+  - awesome-nav
 
 theme:
   name: material
