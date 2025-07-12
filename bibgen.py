@@ -26,7 +26,7 @@ def bib2md(path, entry):
     title = entry.fields_dict["title"].value
     author = entry.fields_dict["author"].value
     year = entry.fields_dict["year"].value
-    source = None
+    source = ""
     for fkey in ["booktitle", "journal", "publisher", "howpublished", "url"]:
         if fkey in entry.fields_dict:
             source = entry.fields_dict[fkey].value
@@ -38,8 +38,6 @@ def bib2md(path, entry):
         source = f"*{source}*."
         if entry.entry_type.startswith("in"):
             source = "In " + source
-    else:
-        source = ""
     ref = f"{author}. ({year}). {title}. {source}"
 
     # Generate code for download link
@@ -50,9 +48,11 @@ def bib2md(path, entry):
     with open(path[:-3] + "md", "w") as file:
         file.write("---\nhide:\n  - toc\n---\n\n")
         file.write(f"# {title}\n\n")
-        # file.write(f"**Entry Key:** `#!tex \\cite{{{entry.key}}}`\n\n")
-        # file.write(f"**Entry Type:** `@{entry.entry_type}`\n\n")
         file.write(f"**Reference:** {ref}\n\n")
+        file.write('<div class="grid" markdown="1">\n\n')
+        file.write(f"**Entry Key:** `#!tex \\cite{{{entry.key}}}`\n\n")
+        file.write(f"**Entry Type:** `@{entry.entry_type}`\n\n")
+        file.write("</div>\n\n")
         file.write(f"[:material-download: Download .bib file]({name}){down}\n\n")
         file.write("Field | Value\n------|------\n")
         for fkey, field in entry.fields_dict.items():
