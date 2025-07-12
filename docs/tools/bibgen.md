@@ -63,4 +63,4 @@ Use this tool to generate a .bib file for an activity collection.
   :material-download: Download .bib file
 </a>
 
-<script src="../bibgen.js"></script>
+<script src="../bibgen.js?v=2025-07-12"></script>

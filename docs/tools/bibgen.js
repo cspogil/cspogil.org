@@ -62,19 +62,19 @@ function bibgen_init() {
     }
 
     // Append non-blank fields
-    bg_code.innerText = `@misc{${bg_key.value}`;
+    bg_code.innerText = `@misc{${bg_key.value.trim()},`;
     for (const [name, element] of fields) {
       if (element.value) {
-        bg_code.innerText += `\n  ${name.padEnd(width)} = {${element.value}},`;
+        bg_code.innerText += `\n  ${name.padEnd(width)} = {${element.value.trim()}},`;
       }
     }
 
     // Append the contents block
     if (bg_contents.value) {
       const padded = bg_contents.value
-        .trimEnd()
         .split('\n')
-        .map((line, index) => index === 0 ? line : ' '.repeat(width + 6) + line)
+        .map((line, index) => index === 0 ? line.trimEnd()
+          : ' '.repeat(width + 6) + line.trimEnd())
         .join('\n');
       const name = 'contents';
       bg_code.innerText += `\n  ${name.padEnd(width)} = {${padded}}`;
