@@ -5,7 +5,7 @@ hide:
 
 # Activities for CS1 in Python
 
-**Reference:** Chris Mayfield, Tricia Shepherd an Helen H. Hu. (2021). Activities for CS1 in Python. *Google Drive and Overleaf*.
+**Reference:** Chris Mayfield, Tricia Shepherd, Helen H. Hu. (2021). Activities for CS1 in Python. *Google Drive and Overleaf*.
 
 <div class="grid" markdown="1">
 
@@ -21,7 +21,7 @@ hide:
 
 Field | Value
 ------|------
-author | Chris Mayfield and Tricia Shepherd an Helen H. Hu
+author | Chris Mayfield and Tricia Shepherd and Helen H. Hu
 title | Activities for CS1 in Python
 howpublished | Google Drive and Overleaf
 url | https://drive.google.com/drive/folders/1UkcVkpiFECMqWAfOGLml_4oGdvBHG4H0

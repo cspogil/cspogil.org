@@ -3,6 +3,7 @@
 import bibtexparser
 import glob
 import os
+import re
 
 
 def reformat_authors(author_string):
@@ -63,8 +64,19 @@ def bib2md(path, entry):
             if fkey != "contents":
                 file.write(f"{fkey} | {field.value}\n")
             else:
+                # Get the index of the left brace
+                pattern = r"^\s*contents\s*=\s*{"
+                match = re.search(pattern, entry.raw, re.MULTILINE)
+                col = len(match.group())
                 # Remove leading whitespace from every line
-                contents = "\n".join(line.lstrip() for line in field.value.splitlines())
+                lines = field.value.splitlines()
+                for i in range(1, len(lines)):
+                    line = lines[i]
+                    beg = 0
+                    while beg < len(line) and beg < col and line[beg] == " ":
+                        beg += 1
+                    lines[i] = line[beg:]
+                contents = "\n".join(lines)
         if contents:
             file.write("\n## Contents\n\n")
             file.write(contents + "\n")
