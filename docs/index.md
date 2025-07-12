@@ -24,7 +24,7 @@ This site contains classroom activities and other resources to support using [Pr
 
 ## :blue_book: CS Activities
 
-Visit the [Activities](activities.md) page to search by course, topic, or author.
+Visit the [Activities](activities/index.md) page to search by course, topic, or author.
 
 !!! note "Featured Collection"
     [**CS POGIL Activity Writing Program 2022**](https://bit.ly/2022cspogil)
@@ -68,7 +68,7 @@ Join our [POGIL in CS Facebook Group](https://www.facebook.com/groups/9007000167
     ---
     Learn about POGIL pedagogy, the POGIL Project, and the history of POGIL in CS.
 
-    [:material-arrow-right: Info](info.md)
+    [:material-arrow-right: Info](info/index.md)
 
 -   :card_box:{ .lg .middle }
     **Meet other CS-POGILers**
@@ -76,7 +76,7 @@ Join our [POGIL in CS Facebook Group](https://www.facebook.com/groups/9007000167
     ---
     Get to know the educators, authors, and researchers in the CS-POGIL community.
 
-    [:material-arrow-right: People](people.md)
+    [:material-arrow-right: People](people/index.md)
 
 -   :books:{ .lg .middle }
     **Stand on the shoulders of giants**
@@ -92,6 +92,6 @@ Join our [POGIL in CS Facebook Group](https://www.facebook.com/groups/9007000167
     ---
     Find resources for facilitation, activity writing, classroom observation, and more.
 
-    [:material-arrow-right: Tools](tools.md)
+    [:material-arrow-right: Tools](tools/index.md)
 
 </div>

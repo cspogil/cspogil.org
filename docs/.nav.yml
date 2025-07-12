@@ -1,7 +1,7 @@
 nav:
   - index.md
-  - activities.md
-  - info.md
-  - people.md
+  - activities
+  - info
+  - people
   - research
-  - tools.md
+  - tools
