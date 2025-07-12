@@ -54,9 +54,20 @@ def bib2md(path, entry):
         file.write(f"**Entry Type:** `@{entry.entry_type}`\n\n")
         file.write("</div>\n\n")
         file.write(f"[:material-download: Download .bib file]({name}){down}\n\n")
+        file.write("## Metadata\n\n")
+
+        # Render the BiBTeX fields as a table
+        contents = ""
         file.write("Field | Value\n------|------\n")
         for fkey, field in entry.fields_dict.items():
-            file.write(f"{fkey} | {field.value}\n")
+            if fkey != "contents":
+                file.write(f"{fkey} | {field.value}\n")
+            else:
+                # Remove leading whitespace from every line
+                contents = "\n".join(line.lstrip() for line in field.value.splitlines())
+        if contents:
+            file.write("\n## Contents\n\n")
+            file.write(contents + "\n")
 
 
 def main():
