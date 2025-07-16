@@ -54,6 +54,9 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+hooks:
+  - hooks/home.py
+
 plugins:
   - search
   - awesome-nav
@@ -77,6 +80,7 @@ theme:
   features:
     - content.code.annotate
     - content.code.copy
+    - content.tooltips
     - navigation.footer
     - navigation.indexes
     - navigation.instant
