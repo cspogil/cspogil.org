@@ -18,6 +18,8 @@ tags:
 
 </div>
 
+**Tags:** <!-- tags -->
+
 [:material-download: Download .bib file](mayfield-cs1-python.bib){download="mayfield-cs1-python.bib"}
 
 ## Metadata

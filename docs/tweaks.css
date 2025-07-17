@@ -26,6 +26,10 @@ nav.bread {
     margin-bottom: 1em;
 }
 
+span.md-tags {
+    margin: 0 !important;
+}
+
 /* print settings */
 
 .md-typeset h2,
