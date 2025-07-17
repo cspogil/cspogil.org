@@ -12,13 +12,13 @@ tags:
 
 <div class="grid" markdown="1">
 
-**Entry Key:** `#!tex \cite{mayfield_cs1_python}`
+**Entry Key:** `#!tex \cite{mayfield-cs1-python}`
 
 **Entry Type:** `@misc`
 
 </div>
 
-[:material-download: Download .bib file](mayfield_cs1_python.bib){download="mayfield_cs1_python.bib"}
+[:material-download: Download .bib file](mayfield-cs1-python.bib){download="mayfield-cs1-python.bib"}
 
 ## Metadata
 

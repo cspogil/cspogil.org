@@ -9,13 +9,13 @@ hide:
 
 <div class="grid" markdown="1">
 
-**Entry Key:** `#!tex \cite{10.1145/3478431.3499381}`
+**Entry Key:** `#!tex \cite{kussmaul-2022-support}`
 
 **Entry Type:** `@inproceedings`
 
 </div>
 
-[:material-download: Download .bib file](acm_3478431.3499381.bib){download="acm_3478431.3499381.bib"}
+[:material-download: Download .bib file](kussmaul-2022-support.bib){download="kussmaul-2022-support.bib"}
 
 ## Metadata
 

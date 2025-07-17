@@ -41,9 +41,17 @@ def bib2md(path, entry):
             source = "In " + source
     ref = f"{author}. ({year}). {title}. {source}"
 
-    # Generate code for download link
+    # Rename files to match the key
     name = os.path.basename(path)
-    down = '{download="' + name + '"}'
+    if name != entry.key + ".bib":
+        new_name = entry.key + ".bib"
+        new_path = path[:-len(name)] + new_name
+        os.rename(path, new_path)
+        md_path = path[:-3] + "md"
+        if os.path.exists(md_path):
+            os.rename(md_path, new_path[:-3] + "md")
+        path = new_path
+        name = new_name
 
     # Generate corresponding Markdown file
     with open(path[:-3] + "md", "w") as file:
@@ -54,6 +62,9 @@ def bib2md(path, entry):
         file.write(f"**Entry Key:** `#!tex \\cite{{{entry.key}}}`\n\n")
         file.write(f"**Entry Type:** `@{entry.entry_type}`\n\n")
         file.write("</div>\n\n")
+
+        # Generate code for download link
+        down = '{download="' + name + '"}'
         file.write(f"[:material-download: Download .bib file]({name}){down}\n\n")
         file.write("## Metadata\n\n")
 
@@ -77,6 +88,8 @@ def bib2md(path, entry):
                         beg += 1
                     lines[i] = line[beg:]
                 contents = "\n".join(lines)
+
+        # Write contents section for activities
         if contents:
             file.write("\n## Contents\n\n")
             file.write(contents + "\n")
@@ -87,8 +100,13 @@ def main():
     for path in glob.glob("docs/**/*.bib", recursive=True):
         print(path)
         library = bibtexparser.parse_file(path)
-        if len(library.failed_blocks) > 0:
-            print("Warning: Some blocks failed to parse")
+        n = len(library.failed_blocks)
+        if n > 0:
+            print(f"Error: {n} blocks failed to parse")
+            return
+        n = len(library.entries)
+        if n != 1:
+            print(f"Error: Found {n} entries (should be 1)")
         for entry in library.entries:
             bib2md(path, entry)
 

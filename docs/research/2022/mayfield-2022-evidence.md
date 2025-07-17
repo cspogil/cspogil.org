@@ -9,13 +9,13 @@ hide:
 
 <div class="grid" markdown="1">
 
-**Entry Key:** `#!tex \cite{10.1145/3478431.3499296}`
+**Entry Key:** `#!tex \cite{mayfield-2022-evidence}`
 
 **Entry Type:** `@inproceedings`
 
 </div>
 
-[:material-download: Download .bib file](acm_3478431.3499296.bib){download="acm_3478431.3499296.bib"}
+[:material-download: Download .bib file](mayfield-2022-evidence.bib){download="mayfield-2022-evidence.bib"}
 
 ## Metadata
 

@@ -9,13 +9,13 @@ hide:
 
 <div class="grid" markdown="1">
 
-**Entry Key:** `#!tex \cite{10.1145/3408877.3432425}`
+**Entry Key:** `#!tex \cite{moudgalya-2021-belonging}`
 
 **Entry Type:** `@inproceedings`
 
 </div>
 
-[:material-download: Download .bib file](acm_3408877.3432425.bib){download="acm_3408877.3432425.bib"}
+[:material-download: Download .bib file](moudgalya-2021-belonging.bib){download="moudgalya-2021-belonging.bib"}
 
 ## Metadata
 

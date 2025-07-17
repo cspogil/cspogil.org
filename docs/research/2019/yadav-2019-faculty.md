@@ -9,13 +9,13 @@ hide:
 
 <div class="grid" markdown="1">
 
-**Entry Key:** `#!tex \cite{10.1145/3287324.3287360}`
+**Entry Key:** `#!tex \cite{yadav-2019-faculty}`
 
 **Entry Type:** `@inproceedings`
 
 </div>
 
-[:material-download: Download .bib file](acm_3287324.3287360.bib){download="acm_3287324.3287360.bib"}
+[:material-download: Download .bib file](yadav-2019-faculty.bib){download="yadav-2019-faculty.bib"}
 
 ## Metadata
 
