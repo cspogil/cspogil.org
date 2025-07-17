@@ -59,6 +59,7 @@ hooks:
 
 plugins:
   - search
+  - tags
   - awesome-nav
 
 theme:

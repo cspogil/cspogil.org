@@ -1,6 +1,9 @@
 ---
 hide:
   - toc
+tags:
+  - CS1
+  - Python
 ---
 
 # Activities for CS1 in Python
