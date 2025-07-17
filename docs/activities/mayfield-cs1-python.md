@@ -1,6 +1,4 @@
 ---
-hide:
-  - toc
 tags:
   - CS1
   - Python
@@ -8,38 +6,16 @@ tags:
 
 # Activities for CS1 in Python
 
-**Reference:** Chris Mayfield, Tricia Shepherd, Helen H. Hu. (2021). Activities for CS1 in Python. *Google Drive and Overleaf*.
+These activities were developed by Chris Mayfield, Tricia Shepherd, and Helen Hu for Computer Science 1 in Python. For full access, contact Chris Mayfield.
 
-<div class="grid" markdown="1">
-
-**Entry Key:** `#!tex \cite{mayfield-cs1-python}`
-
-**Entry Type:** `@misc`
-
-</div>
-
-**Tags:** <!-- tags -->
-
-[:material-download: Download .bib file](mayfield-cs1-python.bib){download="mayfield-cs1-python.bib"}
-
-## Metadata
-
-Field | Value
-------|------
-author | Chris Mayfield and Tricia Shepherd and Helen H. Hu
-title | Activities for CS1 in Python
-howpublished | Google Drive and Overleaf
-url | https://drive.google.com/drive/folders/1UkcVkpiFECMqWAfOGLml_4oGdvBHG4H0
-month | July
-year | 2021
-note | For full access, contact Chris Mayfield
+The first and fourth activity are freely available via {EngageCSEdu}.
 
 ## Contents
 
-1. Introduction to Python
+1. [Introduction to Python][1]
 2. Arithmetic Expressions
 3. Data Types
-4. Conditions and Logic
+4. [Conditions and Logic][4]
 5. Loops and Iteration
 6. Defining Functions
 7. Importing Modules
@@ -51,3 +27,6 @@ note | For full access, contact Chris Mayfield
 13. Defining Classes
 14. Extending Classes
 15. Recursive Functions
+
+[1]: https://www.engage-csedu.org/find-resources/introduction-python
+[4]: https://www.engage-csedu.org/find-resources/conditions-and-logic-python

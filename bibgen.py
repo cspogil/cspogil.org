@@ -100,7 +100,7 @@ def bib2md(path, entry):
 
 def main():
     """Find and parse every bib file."""
-    for path in glob.glob("docs/**/*.bib", recursive=True):
+    for path in glob.glob("docs/research/**/*.bib", recursive=True):
         print(path)
         library = bibtexparser.parse_file(path)
         n = len(library.failed_blocks)
