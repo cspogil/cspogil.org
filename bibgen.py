@@ -68,8 +68,8 @@ def bib2md(path, entry):
 
         # Generate code for download link
         down = '{download="' + name + '"}'
-        file.write(f"[:material-download: Download .bib file]({name}){down}\n\n")
         file.write("## Metadata\n\n")
+        file.write(f"[:material-download: Download .bib file]({name}){down}\n\n")
 
         # Render the BiBTeX fields as a table
         contents = ""

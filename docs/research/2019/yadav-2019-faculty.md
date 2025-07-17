@@ -17,9 +17,9 @@ hide:
 
 </div>
 
-[:material-download: Download .bib file](yadav-2019-faculty.bib){download="yadav-2019-faculty.bib"}
-
 ## Metadata
+
+[:material-download: Download .bib file](yadav-2019-faculty.bib){download="yadav-2019-faculty.bib"}
 
 Field | Value
 ------|------

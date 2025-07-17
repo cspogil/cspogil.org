@@ -17,9 +17,9 @@ hide:
 
 </div>
 
-[:material-download: Download .bib file](moudgalya-2021-belonging.bib){download="moudgalya-2021-belonging.bib"}
-
 ## Metadata
+
+[:material-download: Download .bib file](moudgalya-2021-belonging.bib){download="moudgalya-2021-belonging.bib"}
 
 Field | Value
 ------|------

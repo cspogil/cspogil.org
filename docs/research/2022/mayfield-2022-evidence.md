@@ -17,9 +17,9 @@ hide:
 
 </div>
 
-[:material-download: Download .bib file](mayfield-2022-evidence.bib){download="mayfield-2022-evidence.bib"}
-
 ## Metadata
+
+[:material-download: Download .bib file](mayfield-2022-evidence.bib){download="mayfield-2022-evidence.bib"}
 
 Field | Value
 ------|------

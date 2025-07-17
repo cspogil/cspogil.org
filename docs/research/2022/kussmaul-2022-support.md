@@ -17,9 +17,9 @@ hide:
 
 </div>
 
-[:material-download: Download .bib file](kussmaul-2022-support.bib){download="kussmaul-2022-support.bib"}
-
 ## Metadata
+
+[:material-download: Download .bib file](kussmaul-2022-support.bib){download="kussmaul-2022-support.bib"}
 
 Field | Value
 ------|------
