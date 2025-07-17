@@ -18,6 +18,14 @@
     background-color: var(--md-code-bg-color);
 }
 
+/* breadcrumb links */
+
+nav.bread {
+    color: var(--md-default-fg-color--light);
+    font-size: small;
+    margin-bottom: 1em;
+}
+
 /* print settings */
 
 .md-typeset h2,

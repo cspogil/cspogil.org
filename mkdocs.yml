@@ -55,6 +55,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 hooks:
+  - hooks/bread.py
   - hooks/home.py
   - hooks/strip.py
 
