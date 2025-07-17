@@ -8,7 +8,7 @@ LINK = '  <a href="{0}">{1}</a>\n'
 # Separator text between links
 SEP = "  &nbsp;&gt;&nbsp;\n"
 
-# Where to move tags if present
+# Where to move tags (optional)
 TAGS = "<!-- tags -->"
 
 
@@ -44,13 +44,13 @@ def on_post_page(output, page, config):
 
         # Insert home page at the front
         bread = insert_link(bread, href, "Home")
-        bread = f'\n<nav class="bread">\n{bread}</nav>\n\n'
+        bread = f'\n<nav class="bread"><span>\n{bread}</span></nav>\n\n'
 
         # Place the breadcrumb above the page title
         pos = output.index("<h1")
         output = output[:pos] + bread + output[pos:]
 
-        # Move tags (if present) below the page title
+        # Move tags (if present) to desired location
         pattern = r'<nav class="md-tags"(.*?)</nav>'
         match = re.search(pattern, output, re.DOTALL)
         if match:
@@ -62,7 +62,9 @@ def on_post_page(output, page, config):
                 end = pos + len(TAGS)
                 output = output[:pos] + output[end:]
             else:
-                pos = output.index("</h1>") + 6
+                # Move tags into the breadcrumbs
+                pos = output.index('<nav class="bread">')
+                pos = output.index('</nav>', pos)
 
             # Change the tags <nav> to a <span>
             span = "<span" + match.group()[4:-4] + "span>"
