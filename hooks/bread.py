@@ -11,16 +11,32 @@ SEP = "  &nbsp;&gt;&nbsp;\n"
 # Where to move tags (optional)
 TAGS = "<!-- tags -->"
 
+# Set of all linkable page URLs
+URLS = set()
 
-def insert_link(bread, href, title):
+
+def on_files(files, config):
+    """Called after the files collection is populated from the docs_dir."""
+    for file in files:
+        if file.src_uri.endswith(".md"):
+            URLS.add(file.url)
+
+
+def insert_link(bread, href, title, exists=True):
     """Insert the next link at the front of the breadcrumbs string."""
     if bread:
         bread = SEP + bread
-    if title.isdigit():
-        bread = title + bread
-    else:
+    if exists:
         bread = LINK.format(href, title) + bread
+    else:
+        bread = title + bread
     return bread
+
+
+def dirname(url):
+    """Get the url of the parent directory."""
+    idx = url[:-1].rfind("/")
+    return url[:idx + 1] if idx != -1 else ""
 
 
 def on_post_page(output, page, config):
@@ -30,15 +46,18 @@ def on_post_page(output, page, config):
         # Build the breadcrumb links (html code)
         bread = ""
         href = ".."
+        url = dirname(page.url)
         for a in page.ancestors:
             # Special case: don't link index page
             if bread == "" and a.title == page.title:
                 bread = a.title
                 continue
-            bread = insert_link(bread, href, a.title)
+            bread = insert_link(bread, href, a.title, url in URLS)
+            # Update relative path and url
             href += "/.."
+            url = dirname(url)
 
-        # Append page's filename unless index page
+        # Append page's filename (if not index page)
         if page.title != page.parent.title:
             bread += SEP + "  " + page.url.split("/")[-2] + "\n"
 
