@@ -1,6 +1,7 @@
 # BibTeX Generator
 
 Use this tool to generate a .bib file for an activity collection.
+All fields are optional except the key.
 
 ## Input
 
