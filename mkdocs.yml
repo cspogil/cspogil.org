@@ -12,6 +12,9 @@ extra:
 extra_css:
   - tweaks.css?v=2025-07-17
 
+watch:
+  - tables
+
 markdown_extensions:
 
   # https://python-markdown.github.io/extensions/
@@ -42,7 +45,8 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      check_paths: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid

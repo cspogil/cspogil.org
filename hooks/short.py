@@ -32,6 +32,12 @@ def on_page_markdown(markdown, page, config, files):
     return markdown
 
 
+def abbreviate(url):
+    """Shorten the URL for better text wrapping."""
+    pos = url.index("/", 8)
+    return url[:pos+1] + "..."
+
+
 def parse_entry(path):
     """Parse the given bib file and return the entry."""
 
@@ -88,6 +94,5 @@ def write_entry(entry, out):
         else:
             # Abbreviate the URL to allow text wrapping
             url = field.value
-            pos = url.index("/", 8)
-            abbr = url[:pos+1] + "..."
+            abbr = abbreviate(url)
             out.write(f"[{abbr}]({url})\n")
