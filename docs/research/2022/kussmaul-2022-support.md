@@ -7,7 +7,7 @@ hide:
 
 # Professional Development and Support for POGIL in Computer Science
 
-**Reference:** Clif Kussmaul, Helen H. Hu, Patricia B. Campbell, Chris Mayfield, Aman Yadav. (2022). Professional Development and Support for POGIL in Computer Science. In *Proceedings of the 53rd ACM Technical Symposium on Computer Science Education V. 1*.
+**Reference:** Clif Kussmaul, Helen H. Hu, Patricia B. Campbell, Chris Mayfield, Aman Yadav. (2022). Professional Development and Support for POGIL in Computer Science. In *SIGCSE*.
 
 <div class="grid" markdown="1">
 
@@ -37,4 +37,4 @@ pages | 738–744
 numpages | 7
 keywords | collaborative learning, pogil, mentoring, professional development, process oriented guided inquiry learning
 location | Providence, RI, USA
-series | SIGCSE 2022
+series | SIGCSE

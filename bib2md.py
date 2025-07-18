@@ -37,12 +37,8 @@ def get_fields(entry):
             source = fields[fkey].value
             break
 
-    # Format in italics or default to url
-    if source:
-        source = f"*{source}*"
-        # if entry.entry_type.startswith("in"):
-        #     source = "In " + source
-    else:
+    # Default to short url if not found
+    if not source:
         url = fields["url"].value
         abbr = abbreviate(url)
         source = f"[{abbr}]({url})"
@@ -57,7 +53,10 @@ def gen_md_file(path, entry):
     author, year, title, source = get_fields(entry)
     ref = f"{author}. ({year}). {title}."
     if source:
-        ref += f" {source}."
+        if entry.entry_type.startswith("in"):
+            ref += f" In *{source}*."
+        else:
+            ref += f" *{source}*."
 
     # Rename files to match the key
     name = os.path.basename(path)

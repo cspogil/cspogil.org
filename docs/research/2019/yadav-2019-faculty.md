@@ -7,7 +7,7 @@ hide:
 
 # POGIL in Computer Science: Faculty Motivation and Challenges
 
-**Reference:** Aman Yadav, Clif Kussmaul, Chris Mayfield, Helen H. Hu. (2019). POGIL in Computer Science: Faculty Motivation and Challenges. In *Proceedings of the 50th ACM Technical Symposium on Computer Science Education*.
+**Reference:** Aman Yadav, Clif Kussmaul, Chris Mayfield, Helen H. Hu. (2019). POGIL in Computer Science: Faculty Motivation and Challenges. In *SIGCSE*.
 
 <div class="grid" markdown="1">
 
@@ -37,4 +37,4 @@ pages | 280–285
 numpages | 6
 keywords | faculty development, active learning, qualitative interviews
 location | Minneapolis, MN, USA
-series | SIGCSE '19
+series | SIGCSE

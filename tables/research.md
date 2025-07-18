@@ -2,8 +2,8 @@
 
 Title | Author | Source | Year
 ------|--------|--------|-----
-[POGIL in Computer Science: Faculty Motivation and Challenges](2019/yadav-2019-faculty/) | Aman Yadav, Clif Kussmaul, Chris Mayfield, Helen H. Hu | *SIGCSE '19* | 2019
-[Measuring Students' Sense of Belonging in Introductory CS Courses](2021/moudgalya-2021-belonging/) | Sukanya Kannan Moudgalya, Chris Mayfield, Aman Yadav, Helen H. Hu, Clif Kussmaul | *SIGCSE '21* | 2021
-[Collaborative Learning, Self-Efficacy, and Student Performance in CS1 POGIL](2021/yadav-2021-teamwork/) | Aman Yadav, Chris Mayfield, Sukanya Kannan Moudgalya, Clif Kussmaul, Helen H. Hu | *SIGCSE '21* | 2021
-[Professional Development and Support for POGIL in Computer Science](2022/kussmaul-2022-support/) | Clif Kussmaul, Helen H. Hu, Patricia B. Campbell, Chris Mayfield, Aman Yadav | *SIGCSE 2022* | 2022
-[POGIL in CS1: Evidence for Student Learning and Belonging](2022/mayfield-2022-evidence/) | Chris Mayfield, Sukanya Kannan Moudgalya, Aman Yadav, Clif Kussmaul, Helen H. Hu | *SIGCSE 2022* | 2022
+[POGIL in Computer Science: Faculty Motivation and Challenges](2019/yadav-2019-faculty/) | Aman Yadav, Clif Kussmaul, Chris Mayfield, Helen H. Hu | SIGCSE | 2019
+[Measuring Students' Sense of Belonging in Introductory CS Courses](2021/moudgalya-2021-belonging/) | Sukanya Kannan Moudgalya, Chris Mayfield, Aman Yadav, Helen H. Hu, Clif Kussmaul | SIGCSE | 2021
+[Collaborative Learning, Self-Efficacy, and Student Performance in CS1 POGIL](2021/yadav-2021-teamwork/) | Aman Yadav, Chris Mayfield, Sukanya Kannan Moudgalya, Clif Kussmaul, Helen H. Hu | SIGCSE | 2021
+[Professional Development and Support for POGIL in Computer Science](2022/kussmaul-2022-support/) | Clif Kussmaul, Helen H. Hu, Patricia B. Campbell, Chris Mayfield, Aman Yadav | SIGCSE | 2022
+[POGIL in CS1: Evidence for Student Learning and Belonging](2022/mayfield-2022-evidence/) | Chris Mayfield, Sukanya Kannan Moudgalya, Aman Yadav, Clif Kussmaul, Helen H. Hu | SIGCSE | 2022

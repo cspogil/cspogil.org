@@ -7,7 +7,7 @@ hide:
 
 # POGIL in CS1: Evidence for Student Learning and Belonging
 
-**Reference:** Chris Mayfield, Sukanya Kannan Moudgalya, Aman Yadav, Clif Kussmaul, Helen H. Hu. (2022). POGIL in CS1: Evidence for Student Learning and Belonging. In *Proceedings of the 53rd ACM Technical Symposium on Computer Science Education V. 1*.
+**Reference:** Chris Mayfield, Sukanya Kannan Moudgalya, Aman Yadav, Clif Kussmaul, Helen H. Hu. (2022). POGIL in CS1: Evidence for Student Learning and Belonging. In *SIGCSE*.
 
 <div class="grid" markdown="1">
 
@@ -37,4 +37,4 @@ pages | 439–445
 numpages | 7
 keywords | comparative study, active learning, collaborative learning
 location | Providence, RI, USA
-series | SIGCSE 2022
+series | SIGCSE

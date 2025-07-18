@@ -7,7 +7,7 @@ hide:
 
 # Collaborative Learning, Self-Efficacy, and Student Performance in CS1 POGIL
 
-**Reference:** Aman Yadav, Chris Mayfield, Sukanya Kannan Moudgalya, Clif Kussmaul, Helen H. Hu. (2021). Collaborative Learning, Self-Efficacy, and Student Performance in CS1 POGIL. In *Proceedings of the 52nd ACM Technical Symposium on Computer Science Education*.
+**Reference:** Aman Yadav, Chris Mayfield, Sukanya Kannan Moudgalya, Clif Kussmaul, Helen H. Hu. (2021). Collaborative Learning, Self-Efficacy, and Student Performance in CS1 POGIL. In *SIGCSE*.
 
 <div class="grid" markdown="1">
 
@@ -37,4 +37,4 @@ pages | 775–781
 numpages | 7
 keywords | cs1, pogil, learning outcomes, teamwork, self-efficacy
 location | Virtual Event, USA
-series | SIGCSE '21
+series | SIGCSE

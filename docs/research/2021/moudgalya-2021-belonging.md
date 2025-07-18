@@ -7,7 +7,7 @@ hide:
 
 # Measuring Students' Sense of Belonging in Introductory CS Courses
 
-**Reference:** Sukanya Kannan Moudgalya, Chris Mayfield, Aman Yadav, Helen H. Hu, Clif Kussmaul. (2021). Measuring Students' Sense of Belonging in Introductory CS Courses. In *Proceedings of the 52nd ACM Technical Symposium on Computer Science Education*.
+**Reference:** Sukanya Kannan Moudgalya, Chris Mayfield, Aman Yadav, Helen H. Hu, Clif Kussmaul. (2021). Measuring Students' Sense of Belonging in Introductory CS Courses. In *SIGCSE*.
 
 <div class="grid" markdown="1">
 
@@ -37,4 +37,4 @@ pages | 445–451
 numpages | 7
 keywords | sense of belonging, POGIL, factor analysis, CS1
 location | Virtual Event, USA
-series | SIGCSE '21
+series | SIGCSE
