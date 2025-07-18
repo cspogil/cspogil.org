@@ -99,7 +99,7 @@ def gen_table(name, entries_dict):
         file.write(f'<div id="{name}-index" markdown="1">\n\n')
 
         # Inputs
-        file.write('<div style="margin-top: 2em;">\n')
+        file.write('<div>\n')
         file.write('<input id="filter" class="search" type="search" placeholder="Filter...">\n')
         file.write('<ul class="pagination"></ul>\n')
         file.write('</div>\n\n')

@@ -12,4 +12,6 @@ The following publications generally meet two criteria:
 
 If you have written or know of other such publications, please [let us know](../info/contrib.md)!
 
+## Index { data-search-exclude }
+
 --8<-- "tables/research.md"

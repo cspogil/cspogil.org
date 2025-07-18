@@ -2,7 +2,7 @@
 
 <div id="research-index" markdown="1">
 
-<div style="margin-top: 2em;">
+<div>
 <input id="filter" class="search" type="search" placeholder="Filter...">
 <ul class="pagination"></ul>
 </div>
