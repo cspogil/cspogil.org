@@ -83,6 +83,14 @@ def gen_md_file(path, entry):
         write_entry(entry, file)
 
 
+def sort_key(item):
+    """Sort table entries by (year desc, title)."""
+    fields = item[1].fields_dict
+    year = int(fields["year"].value)
+    title = fields["title"].value
+    return (-year, title)
+
+
 def gen_table(name, entries_dict):
     """Generate a Markdown table for the given entires."""
     path = f"tables/{name}.md"
@@ -91,7 +99,7 @@ def gen_table(name, entries_dict):
         file.write(f'<div id="{name}-index" markdown="1">\n\n')
 
         # Inputs
-        file.write('<div>\n')
+        file.write('<div style="margin-top: 2em;">\n')
         file.write('<input id="filter" class="search" type="search" placeholder="Filter...">\n')
         file.write('<ul class="pagination"></ul>\n')
         file.write('</div>\n\n')
@@ -101,10 +109,11 @@ def gen_table(name, entries_dict):
         file.write('<button class="sort" data-sort="author">Author</button> | ')
         file.write('<button class="sort" data-sort="source">Source</button> | ')
         file.write('<button class="sort" data-sort="year">Year</button>\n')
+        file.write("-----|-----|-----|-----\n")
 
         # Table body
-        file.write("-----|-----|-----|-----\n")
-        for href, entry in entries_dict.items():
+        items = sorted(entries_dict.items(), key=sort_key)
+        for href, entry in items:
             author, year, title, source = get_fields(entry)
             link = f"[{title}]({href})"
             file.write(f"{link} | {author} | {source} | {year}\n")
