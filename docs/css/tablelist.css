@@ -1,0 +1,59 @@
+/* filter and pagination */
+
+.md-content .search {
+  background-color: transparent;
+  border: .05rem solid var(--md-typeset-table-color);
+  min-width: min(20em, 100%);
+  padding: 0.5ex 1ex;
+}
+
+.pagination {
+  display: inline-block !important;
+  font-size: smaller;
+  margin: 0 0 0 1em !important;
+}
+
+.pagination::before {
+  color: var(--md-default-fg-color--light);
+  content: "Page";
+  padding-right: 0.25em;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0.5ex 1ex !important;
+}
+
+/* table header sorting */
+
+th {
+  white-space: nowrap;
+}
+
+th button {
+  color: unset;
+  cursor: pointer;
+  font-weight: unset;
+}
+
+.sort:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  position: relative;
+  right: -0.5ex;
+}
+
+.sort.asc:after {
+  border-top: 5px solid var(--md-primary-fg-color);
+  top: 3px;
+}
+
+.sort.desc:after {
+  border-bottom: 5px solid var(--md-primary-fg-color);
+  top: -5px;
+}

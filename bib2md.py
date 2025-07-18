@@ -83,16 +83,33 @@ def gen_md_file(path, entry):
         write_entry(entry, file)
 
 
-def gen_table(path, entries_dict):
+def gen_table(name, entries_dict):
     """Generate a Markdown table for the given entires."""
+    path = f"tables/{name}.md"
     with open(path, "w") as file:
         file.write(WARN + "\n\n")
-        file.write("Title | Author | Source | Year\n")
-        file.write("------|--------|--------|-----\n")
+        file.write(f'<div id="{name}-index" markdown="1">\n\n')
+
+        # Inputs
+        file.write('<div>\n')
+        file.write('<input id="filter" class="search" type="search" placeholder="Filter...">\n')
+        file.write('<ul class="pagination"></ul>\n')
+        file.write('</div>\n\n')
+
+        # Table head
+        file.write('<button class="sort" data-sort="title">Title</button> | ')
+        file.write('<button class="sort" data-sort="author">Author</button> | ')
+        file.write('<button class="sort" data-sort="source">Source</button> | ')
+        file.write('<button class="sort" data-sort="year">Year</button>\n')
+
+        # Table body
+        file.write("-----|-----|-----|-----\n")
         for href, entry in entries_dict.items():
             author, year, title, source = get_fields(entry)
             link = f"[{title}]({href})"
             file.write(f"{link} | {author} | {source} | {year}\n")
+
+        file.write('\n</div>\n')
 
 
 def main():
@@ -115,8 +132,8 @@ def main():
             acts[href] = entry
 
     # Generate the index pages
-    gen_table("tables/activities.md", acts)
-    gen_table("tables/research.md", pubs)
+    gen_table("activities", acts)
+    gen_table("research", pubs)
 
 
 if __name__ == "__main__":
