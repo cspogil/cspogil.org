@@ -2,4 +2,4 @@
 
 Title | Author | Source | Year
 ------|--------|--------|-----
-[Activities for CS1 in Python](mayfield-cs1-python/) | Chris Mayfield, Tricia Shepherd, Helen H. Hu | [https://drive.google.com/...](https://drive.google.com/drive/folders/1UkcVkpiFECMqWAfOGLml_4oGdvBHG4H0) | 2021
+[Activities for CS1 in Python](mayfield-cs1-python.md) | Chris Mayfield, Tricia Shepherd, Helen H. Hu | [https://drive.google.com/...](https://drive.google.com/drive/folders/1UkcVkpiFECMqWAfOGLml_4oGdvBHG4H0) | 2021

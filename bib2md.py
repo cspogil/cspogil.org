@@ -108,10 +108,10 @@ def main():
             gen_md_file(path, entry)
 
             # Relative path from index page
-            href = path[14:-4] + "/"
+            href = path[14:-3] + "md"
             pubs[href] = entry
         else:
-            href = path[16:-4] + "/"
+            href = path[16:-3] + "md"
             acts[href] = entry
 
     # Generate the index pages
