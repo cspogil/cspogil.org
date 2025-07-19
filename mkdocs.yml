@@ -10,12 +10,7 @@ extra:
       find incomplete pages, broken links, typos, etc.
 
 extra_css:
-  - css/tweaks.css?v=2025-07-18
-  - css/tablelist.css?v=2025-07-18
-
-extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js
-  - js/tablelist.js?v=2025-07-18
+  - tweaks.css?v=2025-07-18
 
 watch:
   - tables

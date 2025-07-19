@@ -18,6 +18,10 @@
     background-color: var(--md-code-bg-color);
 }
 
+.smaller {
+    font-size: smaller;
+}
+
 /* breadcrumb links */
 
 nav.bread {

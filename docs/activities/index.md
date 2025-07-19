@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # Activities
 
 The following activities are available for classroom use.
