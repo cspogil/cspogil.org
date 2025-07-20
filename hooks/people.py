@@ -42,8 +42,9 @@ def on_page_markdown(markdown, page, config, files):
     # Get the text after the heading
     pattern = r"^\s*# (.+)$"
     match = re.search(pattern, markdown, re.MULTILINE)
-    head = markdown[:match.end()]
-    body = markdown[match.end():]
+    neck = match.end() + 5 if match else 0
+    head = markdown[:neck]
+    body = markdown[neck:]
 
     # Determine the relative path
     count = page.url.count("/")
