@@ -55,6 +55,12 @@ def parse_entry(path):
 def write_entry(entry, out):
     """Output the given entry in Markdown format."""
 
+    # Write the "Abstract" section if present
+    field = entry.fields_dict.get("abstract")
+    if field:
+        out.write("\n## Abstract\n\n")
+        out.write(field.value + "\n")
+
     # Write the "Contents" section if present
     field = entry.fields_dict.get("contents")
     if field:
@@ -86,7 +92,7 @@ def write_entry(entry, out):
     # Write field-value pairs in table format
     out.write("Field | Value\n------|------\n")
     for fkey, field in entry.fields_dict.items():
-        if fkey == "contents":
+        if fkey in ["abstract", "contents"]:
             continue
         out.write(f"{fkey} | ")
         if fkey != "url":

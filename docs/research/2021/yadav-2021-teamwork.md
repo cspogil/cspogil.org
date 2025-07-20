@@ -17,6 +17,10 @@ hide:
 
 </div>
 
+## Abstract
+
+Collaborative learning actively engages students in the learning process while developing professional skills that employers seek. Approaches such as Pair Programming and Peer Instruction have been shown to improve student outcomes in computer science. Process Oriented Guided Inquiry Learning (POGIL) is another collaborative learning approach that aims to develop students' mastery of discipline-specific concepts as well as 'process skills' like communication, teamwork, and critical thinking. This paper examines students' perceptions of their content learning and process skills in courses that recently switched to POGIL. We explore the relationship between those perceptions, self-efficacy, and learning performance. Our results show that students have positive views about their teamwork, developing skills to work with others, and thinking through a problem. However, self-efficacy is the only significant predictor of their learning. We discuss the implications of these results for using POGIL and other collaborative learning in CS courses, and identify directions for future work.
+
 ## Metadata
 
 [:material-download: Download .bib file](yadav-2021-teamwork.bib){download="yadav-2021-teamwork.bib"}
@@ -31,7 +35,6 @@ publisher | Association for Computing Machinery
 address | New York, NY, USA
 url | [https://doi.org/...](https://doi.org/10.1145/3408877.3432373)
 doi | 10.1145/3408877.3432373
-abstract | Collaborative learning actively engages students in the learning process while developing professional skills that employers seek. Approaches such as Pair Programming and Peer Instruction have been shown to improve student outcomes in computer science. Process Oriented Guided Inquiry Learning (POGIL) is another collaborative learning approach that aims to develop students' mastery of discipline-specific concepts as well as 'process skills' like communication, teamwork, and critical thinking. This paper examines students' perceptions of their content learning and process skills in courses that recently switched to POGIL. We explore the relationship between those perceptions, self-efficacy, and learning performance. Our results show that students have positive views about their teamwork, developing skills to work with others, and thinking through a problem. However, self-efficacy is the only significant predictor of their learning. We discuss the implications of these results for using POGIL and other collaborative learning in CS courses, and identify directions for future work.
 booktitle | Proceedings of the 52nd ACM Technical Symposium on Computer Science Education
 pages | 775–781
 numpages | 7

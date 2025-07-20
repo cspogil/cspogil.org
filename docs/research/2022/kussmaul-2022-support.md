@@ -17,6 +17,10 @@ hide:
 
 </div>
 
+## Abstract
+
+To encourage and support faculty to adopt active learning pedagogies, we need to understand: (1) what faculty perceive as the challenges and benefits of adoption; and (2) how professional development and support affect faculty adoption. This paper describes a project to provide professional development and support for faculty planning to adopt POGIL in their introductory CS classes. Process Oriented Guided Inquiry Learning (POGIL) is an evidence-based, student-centered pedagogy that focuses on developing both content knowledge and process skills. Using workshop evaluations, interviews, and an end-of-term survey, we found that participating faculty appreciated the additional training, learning materials, and mentoring. They reported that they implemented most key elements of POGIL and that POGIL enhanced student engagement and learning. Key challenges include the time required to complete in-class activities, cover course content, and prepare for activities. These results should help to improve professional development for faculty who want to adopt evidence-based strategies to improve student outcomes.
+
 ## Metadata
 
 [:material-download: Download .bib file](kussmaul-2022-support.bib){download="kussmaul-2022-support.bib"}
@@ -31,7 +35,6 @@ publisher | Association for Computing Machinery
 address | New York, NY, USA
 url | [https://doi.org/...](https://doi.org/10.1145/3478431.3499381)
 doi | 10.1145/3478431.3499381
-abstract | To encourage and support faculty to adopt active learning pedagogies, we need to understand: (1) what faculty perceive as the challenges and benefits of adoption; and (2) how professional development and support affect faculty adoption. This paper describes a project to provide professional development and support for faculty planning to adopt POGIL in their introductory CS classes. Process Oriented Guided Inquiry Learning (POGIL) is an evidence-based, student-centered pedagogy that focuses on developing both content knowledge and process skills. Using workshop evaluations, interviews, and an end-of-term survey, we found that participating faculty appreciated the additional training, learning materials, and mentoring. They reported that they implemented most key elements of POGIL and that POGIL enhanced student engagement and learning. Key challenges include the time required to complete in-class activities, cover course content, and prepare for activities. These results should help to improve professional development for faculty who want to adopt evidence-based strategies to improve student outcomes.
 booktitle | Proceedings of the 53rd ACM Technical Symposium on Computer Science Education V. 1
 pages | 738–744
 numpages | 7
