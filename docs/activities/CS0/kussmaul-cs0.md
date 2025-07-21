@@ -11,7 +11,7 @@ For full access, contact Clif Kussmaul.
 
 ## Contents
 
-1. Searching in Hi-Lo [^1][^2]
+1. Searching in Hi-Lo [^1] [^2]
 2. HTML I: Markup [^2]
 3. HTML II: Docs & Links [^2]
 4. HTML III: Style & CSS
@@ -24,3 +24,15 @@ For full access, contact Clif Kussmaul.
 [^1]: Endorsed by {The POGIL Project}
 [^2]: {EngageCSEdu}
 [^3]: {EngageCSEdu} 2018 Engagement Excellence Award
+
+
+``` bibtex
+@misc{kussmaul-cs0,
+  author = {Clif Kussmaul},
+  title  = {Activities for CS0},
+  url    = {https://drive.google.com/open?id=1GDIfIiXr6nAy22dMas-Its7kXgrKHpps},
+  month  = {July},
+  year   = {2019},
+  note   = {For full access, contact Clif Kussmaul}
+}
+```
