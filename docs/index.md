@@ -68,7 +68,7 @@ Submit new activities or research, request updates to existing content, or share
     **What is this site about?**
 
     ---
-    Learn about POGIL pedagogy, the POGIL Project, and the history of POGIL in CS.
+    Learn about POGIL pedagogy, {The POGIL Project}, and the history of POGIL in CS.
 
     [:material-arrow-right: Info](info/index.md)
 
