@@ -10,5 +10,3 @@ If you have written or know of other activities, please [let us know](../info/co
 
 [1]: https://pogil.org/authoring-materials/writing-guidelines
 [2]: https://pogil.org/authoring-materials/endorsement-publication
-
---8<-- "tables/activities.md"

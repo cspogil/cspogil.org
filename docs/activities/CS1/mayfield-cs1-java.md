@@ -41,3 +41,14 @@ The [LaTeX source code](https://github.com/ChrisMayfield/cspogil/tree/master/CS1
 
 [1]: https://www.engage-csedu.org/find-resources/introduction-java
 [5]: https://www.engage-csedu.org/find-resources/boolean-logic-java
+
+``` bibtex
+@misc{mayfield-cs1-java,
+  author = {Chris Mayfield},
+  title  = {Activities for CS1 in Java},
+  url    = {https://drive.google.com/drive/folders/1f2vcgGnC0oEruiWPnUdO8yegLzD7vyGW},
+  month  = {July},
+  year   = {2021},
+  note   = {For full access, contact Chris Mayfield}
+}
+```

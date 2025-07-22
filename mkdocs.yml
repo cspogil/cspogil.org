@@ -59,6 +59,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 hooks:
+  - hooks/bib2md.py
   - hooks/short.py
   - hooks/people.py
   - hooks/bread.py

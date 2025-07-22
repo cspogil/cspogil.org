@@ -30,3 +30,14 @@ The first and fourth activity are freely available via {EngageCSEdu}.
 
 [1]: https://www.engage-csedu.org/find-resources/introduction-python
 [4]: https://www.engage-csedu.org/find-resources/conditions-and-logic-python
+
+``` bibtex
+@misc{mayfield-cs1-python,
+  author = {Chris Mayfield and Tricia Shepherd and Helen H. Hu},
+  title  = {Activities for CS1 in Python},
+  url    = {https://drive.google.com/drive/folders/1UkcVkpiFECMqWAfOGLml_4oGdvBHG4H0},
+  month  = {July},
+  year   = {2021},
+  note   = {For full access, contact Chris Mayfield}
+}
+```
