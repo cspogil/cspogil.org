@@ -59,10 +59,10 @@ markdown_extensions:
   - pymdownx.tilde
 
 hooks:
-  - hooks/home.py
-  - hooks/bread.py
   - hooks/short.py
   - hooks/people.py
+  - hooks/bread.py
+  - hooks/home.py
 
 plugins:
   - search

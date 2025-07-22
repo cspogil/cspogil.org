@@ -30,30 +30,28 @@ def on_files(files, config):
 def on_page_markdown(markdown, page, config, files):
     """Called after the page's markdown is loaded from the source file."""
 
-    # Replace file snippets now
-    pattern = r'^--8<--\s+"([^"]+)"$'
-    match = re.search(pattern, markdown, re.MULTILINE)
-    if match:
-        with open(match.group(1)) as file:
-            snippet = file.read()
-        beg, end = match.span()
-        markdown = markdown[:beg] + snippet + markdown[end:]
+    if page.url.startswith("people"):
 
-    # Get the text after the heading
-    pattern = r"^\s*# (.+)$"
-    match = re.search(pattern, markdown, re.MULTILINE)
-    neck = match.end() + 5 if match else 0
-    head = markdown[:neck]
-    body = markdown[neck:]
+        # TODO List activities and publications
+        return markdown
 
-    # Determine the relative path
-    count = page.url.count("/")
-    if not page.is_index:
-        count -= 1
-    path = "../" * count
+    else:
 
-    # Link every name in the body text
-    for name, url in PEOPLE.items():
-        repl = f"[{name}]({path}{url})"
-        body = re.sub(name, repl, body)
-    return head + body
+        # Get the text after the heading
+        pattern = r"^\s*# (.+)$"
+        match = re.search(pattern, markdown, re.MULTILINE)
+        neck = match.end() if match else 0
+        head = markdown[:neck]
+        body = markdown[neck:]
+
+        # Determine the relative path
+        count = page.url.count("/")
+        if not page.is_index:
+            count -= 1
+        path = "../" * count
+
+        # Link every name in the body text
+        for name, url in PEOPLE.items():
+            repl = f"[{name}]({path}{url})"
+            body = re.sub(name, repl, body)
+        return head + body
