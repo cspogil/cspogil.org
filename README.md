@@ -9,17 +9,29 @@ Deployment to [GitHub Pages][4] is automated via [GitHub Actions][5].
 [4]: https://pages.github.com/
 [5]: https://github.com/features/actions
 
-## Using MkDocs
+## Dev Setup
 
-To install the required Python packages:
+Create a Python virtual environment:
 ``` sh
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate.bat
+```
+
+Install the required Python packages:
+``` sh
+$ pip install --upgrade pip
 $ pip install --pre -r requirements.txt
 ```
+
+## Using MkDocs
 
 To preview the site locally while editing:
 ``` sh
 $ mkdocs serve
 ```
+
+Then open http://127.0.0.1:8000/ in your browser.
+Whenever you save a file under the docs directory, the site will automatically reload.
 
 ## References
 
