@@ -12,9 +12,6 @@ extra:
 extra_css:
   - tweaks.css?v=2025-07-18
 
-watch:
-  - tables
-
 markdown_extensions:
 
   # https://python-markdown.github.io/extensions/
