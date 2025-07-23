@@ -81,7 +81,7 @@ def get_fields(entry):
 
 
 def write_entry(entry, out):
-    """Output the given entry in Markdown format."""
+    """Output the entry (activity or publication) in Markdown format."""
 
     # Write the "Abstract" section if present
     field = entry.fields_dict.get("abstract")
@@ -132,8 +132,8 @@ def write_entry(entry, out):
             out.write(f"[{abbr}]({url})\n")
 
 
-def gen_md_file(entry, out):
-    """Generate Markdown content for the entry (publication)."""
+def write_page(entry, out):
+    """Generate a standalone page for the entry (publication)."""
 
     # Create a reference format string
     author, year, title, source = get_fields(entry)
@@ -144,8 +144,8 @@ def gen_md_file(entry, out):
         else:
             ref += f" *{source}*."
 
-    # Generate corresponding Markdown file
-    out.write("---\nhide:\n  - toc\n---\n\n")
+    # Generate the top section of the page
+    # out.write("---\nhide:\n  - toc\n---\n\n")
     out.write(WARN + "\n\n")
     out.write(f"# {title}\n\n")
     out.write(f"**Reference:** {ref}\n\n")
@@ -153,25 +153,34 @@ def gen_md_file(entry, out):
     out.write(f"**Entry Key:** `#!tex \\cite{{{entry.key}}}`\n\n")
     out.write(f"**Entry Type:** `@{entry.entry_type}`\n\n")
     out.write("</div>\n")
+
+    # Generate the entry section of the page
     write_entry(entry, out)
 
 
 def sort_key(item):
-    """Sort table entries by (year desc, title)."""
-    fields = item[1].fields_dict
-    year = int(fields["year"].value)
-    title = fields["title"].value
-    return (-year, title)
+    """Sort bullet lists on index pages."""
+    if item[0].startswith("a"):
+        # Activities index: sort by scr_uri
+        return item[0]
+    else:
+        # Research index: sort by (year desc, title)
+        fields = item[1].fields_dict
+        year = int(fields["year"].value)
+        title = fields["title"].value
+        return (-year, title)
 
 
-def gen_table(name, entries_dict, out):
-    """Generate a Markdown table for the given entires."""
+def write_index(name, entries_dict, out):
+    """Generate an index page for the given entities (ACTS or PUBS)."""
     out.write(WARN + "\n")
     prev_dir = None
     items = sorted(entries_dict.items(), key=sort_key)
     for href, entry in items:
         # Remove top-level directory
         href = href[len(name)+1:]
+        if href.endswith("bib"):
+            href = href[:-3] + "md"
 
         # Subsection for each directory
         idx = href.find("/")
@@ -234,7 +243,7 @@ def on_files(files, config):
 
             # Replace code block with markdown
             out = io.StringIO()
-            gen_md_file(entry, out)
+            write_page(entry, out)
             content = out.getvalue()
             file = File.generated(config, uri[:-3] + "md", content=content)
             virtual_files.append(file)
@@ -256,11 +265,11 @@ def on_page_markdown(markdown, page, config, files):
     # Activities index
     if page.url == "activities/":
         out = io.StringIO()
-        gen_table("activities", ACTS, out)
+        write_index("activities", ACTS, out)
         return markdown + out.getvalue()
 
     # Publications index
     if page.url == "research/":
         out = io.StringIO()
-        gen_table("research", PUBS, out)
+        write_index("research", PUBS, out)
         return markdown + out.getvalue()
