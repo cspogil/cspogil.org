@@ -2,6 +2,7 @@
 names:
   - Clif Kussmaul
   - Clifton Kussmaul
+  - Clifton L. Kussmaul
 ---
 
 # Clif Kussmaul
