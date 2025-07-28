@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Research
 
 The following publications generally meet two criteria:
