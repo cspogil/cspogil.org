@@ -1,12 +1,13 @@
 ---
 tags:
   - AppInventor
+  - CSP
   - K-12
 ---
 
 # CS Principles (Hu)
 
-Helen Hu has a set of POGIL activities for CS Principles. They were designed, tested, and refined for a college level course, supported by AAC&U Teaching to Increase Diversity and Equity in STEM ([TIDES](https://www.aacu.org/tides)). The programming is done in [AppInventor](http://appinventor.mit.edu/), but some of the POGIL activities are language independent. The activities are [published on Google Drive](http://tinyurl.com/CSPpogil).
+Helen Hu has a set of POGIL activities originally written for college level CS Principles. They were designed, tested, and refined for a course supported by AAC&U Teaching to Increase Diversity and Equity in STEM ([TIDES](https://www.aacu.org/tides)). The programming is done in [AppInventor](http://appinventor.mit.edu/), but some of the POGIL activities are language independent. The activities are [published on Google Drive](http://tinyurl.com/CSPpogil).
 
 ## Contents
 
