@@ -1,0 +1,108 @@
+/* colors */
+
+.md-banner {
+  background-color: var(--md-warning-bg-color);
+  color: var(--md-warning-fg-color);
+}
+
+.md-banner a {
+  color: var(--md-primary-fg-color);
+  font-weight: bold;
+}
+
+/* admonitions */
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0;
+  border-left-width: 4px;
+  font-size: unset;
+}
+
+/* tables */
+
+.md-typeset table:not([class]) {
+  font-size: unset;
+  line-height: initial;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-code-bg-color);
+}
+
+/* relative font sizes */
+
+.smaller {
+  font-size: smaller;
+}
+
+.larger {
+  font-size: larger;
+}
+
+.smaller a {
+  color: var(--md-accent-fg-color);
+}
+
+.smaller a:focus,
+.smaller a:hover {
+  color: var(--md-typeset-a-color);
+}
+
+.headshot {
+  border-radius: 1ex;
+  max-height: 3in !important;
+  max-width: 3in !important;
+}
+
+/* breadcrumb links */
+
+nav.bread {
+  color: var(--md-default-fg-color--light);
+  font-size: small;
+  margin-bottom: 1em;
+}
+
+nav.bread > span:nth-child(1) {
+  display: inline-block;
+  margin-right: 1em;
+  padding-bottom: 0.25em;
+}
+
+span.md-tags {
+  margin: 0 !important;
+}
+
+/* print settings */
+
+.md-typeset h2,
+.md-typeset h3 {
+  page-break-after: avoid;
+}
+
+@page {
+  margin: 0.5in;
+}
+
+@media print {
+  .md-main__inner {
+    margin-top: 0;
+  }
+
+  .screenonly {
+    display: none !important;
+  }
+}
+
+@media screen {
+  .printonly {
+    display: none !important;
+  }
+}
+
+/* indent child pages in navigation sidebar */
+
+.md-nav[data-md-level="1"] > .md-nav__list {
+  margin-left: 1em;
+  padding-left: 0.5em;
+}
